@@ -1,0 +1,1 @@
+require.config({baseUrl:"http://localhost:9090",paths:{jquery:"./js/lib/jquery-1.9.0",Swiper:"https://cdn.bootcss.com/Swiper/4.3.0/js/swiper.min",ajaxUrl:"./js/conf/ajaxMapping",CommntUse:"./js/mylib/CommntUse",tempstr:"./js/lib/template-web",cookie:"./js/mylib/cookie"}});

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/Swiper/4.3.0/css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/iconfont.css">
+</head>
+
+<body>
+    <div class="import1"></div>
+    <div class="import2"></div>
+    <!--第一部分：静态-->
+    <div class="one" style="height:682px;overflow: hidden;">
+        <!--头部-->
+        <div class="head">
+            <div class="container">
+                <ul class="u1">
+                    <li id="hover1" style="position:relative">
+                        <span class="sh"></span>
+                        <a style="color: #000;">YOHO!BUY 有货</a>
+                        <!--隐藏框1-->
+                        <ul id="u1_a">
+                            <li><a href="#">YOHO!</a></li>
+                            <li><a href="#">YOHO!BOYS</a></li>
+                            <li><a href="#">YOHO!GIRLS</a></li>
+                            <li><a href="#">Mars</a></li>
+                            <li><a href="#">YO'HOOD</a></li>
+                        </ul>
+                    </li>
+                    <li style="color: #d71d32">
+                        <span class="zp"></span>
+                        <a>关于仿诈骗的重要提醒</a>
+                    </li>
+                </ul>
+                <ul class="u2">
+                    <li style="position:relative" id="u2_sj">
+                        <span class="one"></span>
+                        <span class="sj"></span>
+                        <a style="color: #d71d32;">手机版</a>
+                        <!--隐藏框4-->
+                        <div id="box2">
+                            <img src="./images/index-images/ewm.png">
+                            <h5>下载手机客户端</h5>
+                            <h5 style="color: #d71d32;">更多客户端</h5>
+                        </div>
+                    </li>
+                    <li style="position:relative" id="u2_gz">
+                        <span class="one"></span>
+                        <span class="gz"></span>
+                        <a style="color:#86bf4a">关注有货</a>
+                        <!--隐藏框3-->
+                        <div id="box1">
+                            <img src="./images/index-images/ewm.png">
+                            <h5>微信扫一扫</h5>
+                            <h5>关注公众号，送球鞋</h5>
+                        </div>
+                    </li>
+                    <li id="kh">
+                        <span class="one"></span>
+                        <span class="iconfont icon-kefu"></span>
+                        <a>客户服务</a>
+                        <!--隐藏框2-->
+                        <ul id="u2_kh">
+                            <li><a href="#">在线客服</a></li>
+                            <li><a href="#">帮助中心</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="one"></span>
+                        <span class="xx"></span>
+                        <a>消息</a>
+                    </li>
+                    <li>
+                        <span class="one"></span>
+                        <span class="ax"></span>
+                        <a>我的收藏</a>
+                    </li>
+                    <li>
+                        <span class="one"></span>
+                        <span class="dd"></span>
+                        <a>我的订单</a>
+                    </li>
+                    <li class="u2_hover">
+                        <span class="one"></span>
+                        <span class="xj"></span>
+                        <a>MY有货</a>
+                    </li>
+                    <li id="li1">
+                        <span>Hi~</span>
+                        [
+                        <a href="./pages/login/login.html" self="_blank" id="user">请登录</a>
+                        ]
+                        [
+                        <a href="./pages/register/register.html" self="_blank" id="tc">免费注册</a>
+                        ]
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--搜索框,导航栏部分-->
+        <div class="nav">
+            <div class="nav-one">
+                <h1 class="logo"></h1>
+                <ul class="nav-one-list">
+                    <!--男生-->
+                    <li class="boys avtive">
+                        <h5 class="name-cn">
+                            <a href="#">男生</a>
+                        </h5>
+                        <h5 class="name-en">
+                            <a href="#">BOYS</a>
+                        </h5>
+                    </li>
+                    <!--女生-->
+                    <li class="girls">
+                        <h5 class="name-cn">
+                            <a href="#">女生</a>
+                        </h5>
+                        <h5 class="name-en">
+                            <a href="#">GIRLS</a>
+                        </h5>
+                    </li>
+                    <!--潮童-->
+                    <li class="kids">
+                        <h5 class="name-cn">
+                            <a href="#">潮童</a>
+                        </h5>
+                        <h5 class="name-en">
+                            <a href="#">KIDS</a>
+                        </h5>
+                    </li>
+                    <!--创意生活-->
+                    <li class="life">
+                        <h5 class="name-cn">
+                            <a href="#">创意生活</a>
+                        </h5>
+                        <h5 class="name-en">
+                            <a href="#">LIFE STYLE</a>
+                        </h5>
+                    </li>
+                </ul>
+                <div class="nav-container">
+                    <!--搜索框部分-->
+                    <div class="serach">
+                         <!--自动提示生成-->
+                         <ul id="suggestion" style="z-index:99;top: 28px">
+
+                        </ul>
+                        <input type="text" placeholder="秋装劲减 最高立减 ￥180" id="serach_from" value="">
+                        <div class="search-btn">
+                            <span class="iconfont icon-sousuo" style="color:white;font-size: 20px"></span>
+                        </div>
+                        <ul class="serach_hot">
+                            <li>
+                                <span class="ser_val">PUMA</span>
+                            </li>
+                            <li>
+                                <span class="ser_val">VANS</span>
+                            </li>
+                            <li>
+                                <span class="ser_val">工装裤</span>
+                            </li>
+                            <li>
+                                <span class="ser_val">converse</span>
+                            </li>
+                            <li style="margin-left:10px;">
+                                <span class="ser_val">卫衣</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--购物车-->
+                    <div class="cart">
+                        <span class="iconfont icon-gouwuche-copy" style="font-size:26px"></span>
+                        <!--显示购物车数量-->
+                        <!--隐藏框-->
+                        <div class="cart-hide">
+                            <div class="empty-cart">
+                                <h3>您的购物车暂无商品</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--导航栏-->
+            <div class="nav-two">
+                <div class="nav-two-content">
+                    <ul class="nav01">
+                        <li><a href="#">新品到着</a></li>
+                        <li><a href="#">品牌一览</a></li>
+                        <li><a href="#">服饰</a></li>
+                        <li><a href="#">鞋履</a></li>
+                        <li><a href="#">包装</a></li>
+                        <li><a href="#">配饰·其他</a></li>
+                        <li><a href="#">逛</a></li>
+                        <li><a href="#">SALE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--轮播图-->
+        <div class="scrollImg">
+            <div class="banner">
+                <!--大图-->
+                <div class="contain-bg">
+                    <ul id="banner_bg">
+                        <li>
+                            <img src="./images/index-images/bg1.jpg">
+                        </li>
+                        <li>
+                            <img src="./images/index-images/bg2.jpg">
+                        </li>
+                        <li>
+                            <img src="./images/index-images/bg3.jpg">
+                        </li>
+                        <li>
+                            <img src="./images/index-images/bg4.jpg">
+                        </li>
+                        <li>
+                            <img src="./images/index-images/bg5.jpg">
+                        </li>
+                        <li>
+                            <img src="./images/index-images/bg6.jpg">
+                        </li>
+                        <li>
+                            <img src="./images/index-images/bg7.jpg">
+                        </li>
+                        <li>
+                            <img src="./images/index-images/bg8.jpg">
+                        </li>
+                        <li>
+                            <img src="./images/index-images/bg1.jpg">
+                        </li>
+                    </ul>
+                </div>
+                <!--小图-->
+                <ul id="banner_sm">
+                    <li style="margin:0" class="active">
+                        <img src="./images/index-images/s1.jpg">
+                    </li>
+                    <li>
+                        <img src="./images/index-images/s2.jpg">
+                    </li>
+                    <li>
+                        <img src="./images/index-images/s3.jpg">
+                    </li>
+                    <li>
+                        <img src="./images/index-images/s4.jpg">
+                    </li>
+                    <li>
+                        <img src="./images/index-images/s5.jpg">
+                    </li>
+                    <li>
+                        <img src="./images/index-images/s6.jpg">
+                    </li>
+                    <li>
+                        <img src="./images/index-images/s7.jpg">
+                    </li>
+                    <li>
+                        <img src="./images/index-images/s8.jpg">
+                    </li>
+                </ul>
+                <!--右箭头-->
+                <div id="rightBtn">
+                    <span class="iconfont icon-icon-arrow-right"></span>
+                </div>
+                <!--左箭头-->
+                <div id="leftBtn">
+                    <span class="iconfont icon-icon-arrow-left"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--第二部分:动态生成商品-->
+    <div class="body">
+        <!--one-->
+        <div class="body-one">
+            <div class="body-title-top">
+                <h2 class="floor-title">人气单品</h2>
+                <p class="clear"></p>
+            </div>
+            <ul>
+                <li>
+                    <a href="http://localhost:9090/pages/goods/goodslist.html" target="_blank">
+                        <img src="./images/index-images/t2.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="impo1">
+                        <img src="./images/index-images/t1.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/index-images/t3.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/index-images/t4.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/index-images/t2.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/index-images/t3.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/index-images/t4.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/index-images/t2.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/index-images/t3.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="impo1">
+                        <img src="./images/index-images/t1.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--广告-->
+        <div class="body-ad">
+            <a href="#">
+                <img src="./images/index-images/t5.jpg">
+            </a>
+        </div>
+        <!--two-->
+
+        <div class="body-two">
+            <div class="body-title-top">
+                <h2 class="floor-title">优选品牌</h2>
+                <p class="clear"></p>
+            </div>
+            <!--小轮播图-->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <ul>
+                            <li>
+                                <a>
+                                    <img src="./images/index-images/xbg1.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="./images/index-images/xbg2.jpg">
+                                </a>
+                            </li>
+                            <li style="margin-right:0px">
+                                <a>
+                                    <img src="./images/index-images/xbg3.jpg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul>
+                            <li>
+                                <a>
+                                    <img src="./images/index-images/xbg4.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="./images/index-images/xbg5.jpg">
+                                </a>
+                            </li>
+                            <li style="margin-right:0px">
+                                <a>
+                                    <img src="./images/index-images/xbg6.jpg">
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-button-prev iconfont icon-icon-arrow-left" id="s_btn1"></div>
+                <!--左箭头-->
+                <div class="swiper-button-next iconfont icon-icon-arrow-right" id="s_btn2"></div>
+                <!--右箭头-->
+            </div>
+            <!--动态生成图片-->
+            <div id="t"></div>
+            <div class="lodo-brand">
+
+            </div>
+        </div>
+        <!--新品上架-->
+        <div class="body-xp" id="xp">
+            <div class="body-title-top">
+                <h2 class="floor-title">新品上架</h2>
+                <p class="clear"></p>
+            </div>
+            <div id="new">
+
+            </div>
+        </div>
+        <!--查看更多-->
+        <div class="more">
+            <a href="#">查看更多</a>
+        </div>
+    </div>
+    <!--第三部分：尾部:静态-->
+    <div class="foot">
+        <div class="foot-container">
+            <!--尾部第一部分-->
+            <div class="foot-one">
+                <div class="one-content">
+                    <div class="left">
+                        <span class="iconfont icon-zhengpinbaozhang2 rgb1"></span>
+                        <span class="red">100%</span>
+                        <span class="rgb2">品牌正品</span>
+                    </div>
+                    <div class="left">
+                        <span class="iconfont icon-7tianwuliyoutuihuo rgb1"></span>
+                        <span class="red">100%</span>
+                        <span class="rgb2">品牌正品</span>
+                    </div>
+                    <div class="left">
+                        <span class="iconfont icon-zaixiankefu rgb1"></span>
+                        <span class="red">100%</span>
+                        <span class="rgb2">品牌正品</span>
+                    </div>
+                    <div class="right">
+                        <input type="text" value="订阅我们的邮箱">
+                        <span class="iconfont icon-youxiang yx"></span>
+                    </div>
+                </div>
+            </div>
+            <!--尾部第二部分-->
+            <div class="foot-two">
+                <div class="two-content">
+                    <ul>
+                        <li>
+                            <p>
+                                <span>新手专区</span>
+                            </p>
+                            <p>
+                                <a href="#">注册登录</a>
+                            </p>
+                            <p>
+                                <a href="#">购物结算</a>
+                            </p>
+                            <p>
+                                <a href="#">下单支付</a>
+                            </p>
+                            <p>
+                                <a href="#">收货评价</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>会员中心</span>
+                            </p>
+                            <p>
+                                <a href="#">会员制度</a>
+                            </p>
+                            <p>
+                                <a href="#">会员优惠</a>
+                            </p>
+                            <p>
+                                <a href="#">账户管理</a>
+                            </p>
+                            <p>
+                                <a href="#">密码管理</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>发票</span>
+                            </p>
+                            <p>
+                                <a href="#">发票</a>
+                            </p>
+                            <p>
+                                <a href="#">尺码对照</a>
+                            </p>
+                            <p>
+                                <a href="#">尺码解读</a>
+                            </p>
+                            <p>
+                                <a href="#">商品咨询</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>支付方式</span>
+                            </p>
+                            <p>
+                                <a href="#">在线支付</a>
+                            </p>
+                            <p>
+                                <a href="#">货到付款</a>
+                            </p>
+                            <p>
+                                <a href="#">分期付款</a>
+                            </p>
+                            <p>
+                                <a href="#">优惠劵、有货币</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>配送方式</span>
+                            </p>
+                            <p>
+                                <a href="#">配送说明</a>
+                            </p>
+                            <p>
+                                <a href="#">运费说明</a>
+                            </p>
+                            <p>
+                                <a href="#">验货签收</a>
+                            </p>
+                            <p>
+                                <a href="#">收货样本</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>售后服务</span>
+                            </p>
+                            <p>
+                                <a href="#">退换货政策</a>
+                            </p>
+                            <p>
+                                <a href="#">退换货流程</a>
+                            </p>
+                            <p>
+                                <a href="#">投诉与建议</a>
+                            </p>
+                            <p>
+                                <a href="#">在线客服</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>App常见问题</span>
+                            </p>
+                            <p>
+                                <a href="#">iPhone版</a>
+                            </p>
+                            <p>
+                                <a href="#">Android版</a>
+                            </p>
+                            <p>
+                                <a href="#">wap版</a>
+                            </p>
+                            <p>
+                                <a href="#">IPAD版</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--尾部第三部分-->
+            <div class="foot-there">
+                <div class="there-content">
+                    <div class="top">
+                        <div class="top-left">
+                            <img src="./images/index-images/f1.png">
+                            <img src="./images/index-images/f2.png">
+                            <img src="./images/index-images/f3.png">
+                        </div>
+                        <div class="top-right">
+                            <a>返回首页</a>
+                            <span>|</span>
+                            <a>YOHO!BUY 有货</a>
+                            <span>|</span>
+                            <a>新力传媒</a>
+                            <span>|</span>
+                            <a>联系我们</a>
+                            <span>|</span>
+                            <a>商家入驻</a>
+                            <span>|</span>
+                            <a>隐私条款</a>
+                            <span>|</span>
+                            <a>友情链接</a>
+                            <span>|</span>
+                            <a>潮流品牌大全</a>
+                            <span>|</span>
+                            <a>潮流品类大全</a>
+                            <span>|</span>
+                            <a>潮流产品大全</a>
+                            <span>|</span>
+                            <br>
+                            <a>潮流咨询</a>
+                            <span>|</span>
+                            <a>穿衣搭配(男生版)</a>
+                            <span>|</span>
+                            <a>穿衣搭配(女生版)</a>
+                            <span>|</span>
+                            <a>潮流人气</a>
+                            <span>|</span>
+                            <a>潮流潮品</a>
+                            <span>|</span>
+                            <a>潮流视频</a>
+                            <span>|</span>
+                            <a class="police">苏公网安备 32010502010132号</a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>CopyRight © 2007-2018 南京新与力文化传播有限公司 苏ICP备09011225号 NewPower Co. 版权所有
+                            经营许可证编号：苏B2-20120395</p>
+                    </div>
+                </div>
+            </div>
+            <!--尾部第四部分-->
+            <div class="foot-four">
+                <div class="four-left">友情链接：</div>
+                <div class="four-right">
+                    <ul class="clearfix">
+                        <li style="margin-left:11px"><a href="http://www.yohobuy.com" target="_blank">有货</a></li>
+                        <li><a href="http://www.chinasspp.com/" target="_blank">时尚品牌网</a></li>
+                        <li><a href="http://www.chinasspp.com/brand/" target="_blank">服装品牌</a></li>
+                        <li><a href="http://www.hunliji.com" target="_blank">拍婚纱照</a></li>
+                        <li><a href="http://www.912688.com" target="_blank">搜好货网</a></li>
+                        <li><a href="http://baike.xbiao.com/" target="_blank">手表知识</a></li>
+                        <li><a href="https://www.38fan.com/" target="_blank">丽人时尚网</a></li>
+                        <li><a href="http://www.nuolaimei.com" target="_blank">化妆品商城</a></li>
+                        <li><a href="http://www.dn1234.com" target="_blank">1234</a></li>
+                        <li><a href="http://www.55haitao.com/deals/" target="_blank">海淘折扣</a></li>
+                        <li><a href="http://www.shikee.com/" target="_blank">免费试用</a></li>
+                        <li><a href="http://www.hznzcn.com/" target="_blank">女装批发拿货</a></li>
+                        <li><a href="http://www.zocai.com/" target="_blank">钻戒</a></li>
+                        <li><a href="http://www.china-ef.com" target="_blank">品牌服装网</a></li>
+                        <li><a href="http://data.mshishang.com/" target="_blank">时尚品牌库</a></li>
+                        <li><a href="http://www.nv43.com" target="_blank">时尚女人网</a></li>
+                        <li><a href="https://www.1diandian.net" target="_blank">生日礼物</a></li>
+                        <li><a href="http://www.51fashion.com.cn/" target="_blank">时尚饰界</a></li>
+                        <li><a href="http://www.91lai.com" target="_blank">海淘网官网</a></li>
+                        <li><a href="http://www.qqqnm.com" target="_blank">海淘攻略</a></li>
+                        <li><a href="http://www.haitaoshen.com" target="_blank">海淘资讯</a></li>
+                        <li><a href="http://suliao.huangye88.com" target="_blank">塑料网</a></li>
+                        <li><a href="http://china.globrand.com" target="_blank">品牌加盟网</a></li>
+                        <li><a href="http://www.hao224.com/" target="_blank">好团网</a></li>
+                        <li><a href="http://so.jiameng.com/" target="_blank">品牌加盟项目</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--固定定位元素-->
+    <div class="fix1">
+        <div class="img"></div>
+        <h5>下载手机客户端</h5>
+        <i class="iconfont icon-cuowu" id="del_btn"></i>
+    </div>
+    <div class="fix2">
+        <div class="box1">
+            <div class="box1-one">
+                <span class="iconfont icon-erweima"></span>
+            </div>
+            <div id="box-hide">
+                <div class="one">
+                    <img src="../images/index-images/ewm.png">
+                    <h5>微信扫一扫</h5>
+                    <h5>关注公众号,送球鞋</h5>
+                </div>
+                <div class="two">
+                    <img src="../images/index-images/ewm.png">
+                    <h5>下载手机客户端</h5>
+                    <h5 style="color: #d71d32;">更多客户端</h5>
+                </div>
+            </div>
+        </div>
+        <div class="box2" style="cursor:pointer">
+            <span class="iconfont icon-icon-arrow-up"></span>
+        </div>
+    </div>
+
+</body>
+<script src="./js/lib/require.js" data-main="./js/index.js"></script>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情页</title>
+    <link type="text/css" rel="stylesheet" href="../../css/pages/goods/goodsdtail.css">
+</head>
+
+<body>
+    <!--公共头部-->
+    <div id="h"></div>
+    <!--添加评论模板字符串-->
+    <div class="con"></div>
+    <!--身体-->
+    <div class="body">
+        <div class="path-nav">
+            <a href="#">BOYS首页</a>&nbsp;&nbsp;>&nbsp;&nbsp;
+            <a href="#">上衣</a>&nbsp;&nbsp;>&nbsp;&nbsp;
+            <a href="#">夹克</a>&nbsp;&nbsp;>&nbsp;&nbsp;
+            <span class="last">MADNESS M51 FLEID JACKET</span>
+        </div>
+        <div class="main">
+            <!--左边图片查看-->
+            <div class="left">
+                <div class="left-img">
+                    <div class="clearfix"></div>
+                    <div class="min-img">
+                        <img id="img-show" src="//img11.static.yhbimg.com/goodsimg/2017/11/21/16/016d223fadc5da74ad6d22f777ebb156c9.jpg?imageMogr2/thumbnail/420x560/background/d2hpdGU=/position/center/quality/80">
+                        <!--移动粉色框-->
+                        <div class="move-obj">
+
+                        </div>
+                        <!--背影限制框-->
+                        <div class="move-over">
+
+                        </div>
+                        <!--大框-->
+                        <div class="big-img">
+                            <img id="big" src="//img11.static.yhbimg.com/goodsimg/2017/11/21/16/016d223fadc5da74ad6d22f777ebb156c9.jpg?imageMogr2/thumbnail/750x1000/background/d2hpdGU=/position/center/quality/80">
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbs">
+                    <div class="thumbs-wrap">
+                        <img class="thumbs-img border" src="//img11.static.yhbimg.com/goodsimg/2017/11/21/16/016d223fadc5da74ad6d22f777ebb156c9.jpg?imageMogr2/thumbnail/75x100/background/d2hpdGU=/position/center/quality/80">
+                        <img class="thumbs-img" src="//img10.static.yhbimg.com/goodsimg/2017/11/21/16/012000a5456934e94be87e6c45653bc0d9.jpg?imageMogr2/thumbnail/420x560/background/d2hpdGU=/position/center/quality/80">
+                    </div>
+                </div>
+            </div>
+            <!--右侧购买商品-->
+            <div class="right">
+                <h1 class="name">MADNESS M51 FLEID JACKET</h1>
+                <div class="line"></div>
+                <div class="price">
+                    <div class="price-row">
+                        <span class="title">吊牌价</span>
+                        <span class="p">￥1699</span>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="type-chose">
+                    <div class="chose-color">
+                        <span class="title">颜&nbsp;&nbsp;色：</span>
+                        <ul>
+                            <li>
+                                <img src="//img10.static.yhbimg.com/goodsimg/2018/05/17/09/011c83698101140f252f246a45303cff05.jpg?imageMogr2/thumbnail/25x32/background/d2hpdGU=/position/center/quality/80">
+                                <span class="color-name">深灰色</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chose-size">
+                        <span class="title">尺&nbsp;&nbsp;码：</span>
+                        <div class="size">
+                            <ul>
+                                <li class="active">S</li>
+                                <li>M</li>
+                                <li>L</li>
+                                <li>XL</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--数量-->
+                    <div class="chose-num">
+                        <span class="title">数&nbsp;&nbsp;量：</span>
+                        <div class="num-wraper">
+                            <span class="aesc">-</span>
+                            <span id="num">1</span>
+                            <span class="desc">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="gouwu">
+                    <div class="g_btn1"><a href="http://localhost:9090/pages/goods/cart.html" target="_blank" style="color:white">加入购物车</a></div>
+                    <div class="g_btn2">收藏商品</div>
+                </div>
+            </div>
+        </div>
+        <p class="clearfix"></p>
+        <!--评论-->
+        <div class="other-info">
+            <div class="container">
+                <p class="title">
+                    <span class="title-head">
+                        <span class="cur">商品评价</span>
+                    </span>
+                </p>
+                <div class="comment">
+                    <!--动态生成评价-->
+                    <ul id="pl">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="clearfix"></p>
+    <!--公共尾部-->
+    <div id="f"></div>
+</body>
+<script src="http://localhost:9090/js/lib/require.js" data-main="http://localhost:9090/js/pages/goods/goodsdtail.js"></script>
+
+</html>

@@ -1,0 +1,23 @@
+<script type="text/html" id="com">
+    <%for(var i=0;i<list.length;i++) {%>
+    <li>
+        <div class="user">
+            <span class="name"><%= list[i].comment.userId%></span>
+        </div>
+        <dl class="pull-right">
+            <dd>颜色：深灰色</dd>
+            <dd>尺码：S</dd>
+            <dd>身高：178 厘米</dd>
+            <dd>体重：60 公斤</dd>
+            <dd>尺码符合度：合适</dd>
+        </dl>
+        <div class="detail">
+            <p class="com"><%= list[i].commentUser.userNick%></p>
+            <div class="img-view">
+                <img src="//img10.static.yhbimg.com/sns/2018/09/11/21/01b86035116eae55b94668a1c39e89e21b.jpg?imageView2/1/w/70/h/100">
+            </div>
+            <span><%= list[i].comment.commentDate%></span>
+        </div>
+    </li>
+    <%}%>
+</script>

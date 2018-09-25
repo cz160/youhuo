@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表页面</title>
+    <link type="text/css" rel="stylesheet" href="../../css/pages/goods/goodslist.css">
+</head>
+
+<body>
+    <!--商品列表页-->
+
+    <!--商品字符串模板-->
+    <div id="goodslist">
+
+    </div>
+    <!--公共头部-->
+    <div id="h">
+    </div>
+    <div class="body">
+        <div class="path-nav">
+            <a href="#">BOYS首页</a>&nbsp;&nbsp;>&nbsp;&nbsp;
+            <span class="last">Dickies</span>
+        </div>
+        <!--左边列表页-->
+        <div class="list-left">
+            <div class="sort-container">
+                <ul>
+                    <li>
+                        <h2>
+                            <a href="#">全部品类</a>
+                        </h2>
+                    </li>
+                    <li class="product-nav">
+                        <h3>
+                            <span class="trangle"></span>
+                            <span>上衣</span>
+                        </h3>
+                        <ul class="child-list">
+                            <li>
+                                <a href="#">全部上衣</a>
+                            </li>
+                            <li>
+                                <a href="#">T袖</a>
+                            </li>
+                            <li>
+                                <a href="#">卫衣</a>
+                            </li>
+                            <li>
+                                <a href="#">衬衫</a>
+                            </li>
+                            <li>
+                                <a href="#">夹克</a>
+                            </li>
+                            <li>
+                                <a href="#">POLOs衫</a>
+                            </li>
+                            <li>
+                                <a href="#">棉衣</a>
+                            </li>
+                            <li>
+                                <a href="#">羽绒服</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="product-nav">
+                        <h3>
+                            <span class="trangle"></span>
+                            <span>裤装</span>
+                        </h3>
+                        <ul class="child-list">
+                            <li>
+                                <a href="#">全部裤装</a>
+                            </li>
+                            <li>
+                                <a href="#">休闲裤</a>
+                            </li>
+                            <li>
+                                <a href="#">牛仔裤</a>
+                            </li>
+                            <li>
+                                <a href="#">运动裤</a>
+                            </li>
+                            <li>
+                                <a href="#">紧身裤/打底裤</a>
+                            </li>
+                            <li>
+                                <a href="#">短裤</a>
+                            </li>
+                            <li>
+                                <a href="#">连体裤</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="product-nav">
+                        <h3>
+                            <span class="trangle"></span>
+                            <span>包装</span>
+                        </h3>
+                        <ul class="child-list">
+                            <li>
+                                <a href="#">全部包装</a>
+                            </li>
+                            <li>
+                                <a href="#">双肩包</a>
+                            </li>
+                            <li>
+                                <a href="#">单肩包/手拎包</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="product-nav">
+                        <h3>
+                            <span class="trangle"></span>
+                            <span>裙装</span>
+                        </h3>
+                        <ul class="child-list">
+                            <li>
+                                <a href="#">全部裙装</a>
+                            </li>
+                            <li>
+                                <a href="#">半身裙</a>
+                            </li>
+                            <li>
+                                <a href="#">连衣裙</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="product-nav">
+                        <h3>
+                            <span class="trangle"></span>
+                            <span>服配</span>
+                        </h3>
+                        <ul class="child-list">
+                            <li>
+                                <a href="#">全部服配</a>
+                            </li>
+                            <li>
+                                <a href="#">帽子</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--右边列表页-->
+        <div class="list-right">
+            <div class="fiter-box">
+                <div class="section sex" style="height:30px">
+                    <span class="title">性别：</span>
+                    <div class="attr-content">
+                        <a href="#" class="attr">BOYS</a>
+                        <a href="#" class="attr">GIRLS</a>
+                    </div>
+                </div>
+                <div class="section people" style="height:30px">
+                    <span class="title">人群：</span>
+                    <div class="attr-content">
+                        <a href="#" class="attr">成人</a>
+                        <a href="#" class="attr">大童11-15岁</a>
+                        <a href="#" class="attr">中童7-10岁</a>
+                        <a href="#" class="attr">小童2-6岁</a>
+                    </div>
+                </div>
+                <div class="section price" style="height:30px">
+                    <span class="title">价格：</span>
+                    <div class="attr-content">
+                        <a href="#" class="attr">￥0-319</a>
+                        <a href="#" class="attr">￥320-449</a>
+                        <a href="#" class="attr">￥450-959</a>
+                        <a href="#" class="attr">￥959以上</a>
+                    </div>
+                </div>
+                <div class="section color" style="height:60px">
+                    <span class="title">颜色：</span>
+                    <div class="attr-content">
+                        <a href="http://localhost:9090/pages/goods/goodsdtail.html" target="_blank" class="attr">
+                            <i class="color-block" style="background: #ee0000;"></i>红色
+                        </a>
+                        <a href="#" class="attr">
+                            <i class="color-block" style="background: white;"></i>白色
+                        </a>
+                        <a href="#" class="attr">
+                            <i class="color-block" style="background:#ff5c01;"></i>橙色
+                        </a>
+                        <a href="#" class="attr">
+                            <i class="color-block" style="background: black;"></i>黑色
+                        </a>
+                        <a href="#" class="attr">
+                            <i class="color-block" style="background: #ccc;"></i>灰色
+                        </a>
+                        <a href="#" class="attr">
+                            <i class="color-block" style="background: #8b5402;"></i>棕色
+                        </a>
+                        <a href="#" class="attr">
+                            <i class="color-block" style="background: green;"></i>绿色
+                        </a>
+                        <a href="#" class="attr">
+                            <i class="color-block" style="background: blue;"></i>蓝色
+                        </a>
+                        <a href="#" class="attr">
+                            <i class="color-block" style="background: #8b5402;"></i>棕卡其
+                        </a>
+                        <a href="#" class="attr">
+                            <i class="color-block" style="background: yellow;"></i>黄色
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--动态生成商品-->
+            <div class="page">
+                <div class="goods-container show" id="goods">
+
+                </div>
+                <div class="goods-container" id="goods2">
+
+                </div>
+                <div class="goods-container" id="goods3">
+                </div>
+            </div>
+            <!--分页-->
+            <div class="foot-page">
+                <div class="pager">
+                    <a class="title"> < 上一页</a>
+                    <a class="cur">1</a>
+                    <a>2</a>
+                    <a>3</a>
+                    <a class="title">下一页 ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--清除首尾浮动-->
+    <p style="clear:both;width: 0px;height: 0px;"></p>
+    <!--公共尾部-->
+    <div id="f">
+    </div>
+</body>
+<script src="http://localhost:9090/js/lib/require.js" data-main="http://localhost:9090/js/pages/goods/goodslist.js"></script>
+
+</html>

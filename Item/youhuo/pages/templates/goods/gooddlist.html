@@ -1,0 +1,28 @@
+<script type="text/html" id="cz">
+    <%for(var i=0;i<list.length;i++) { %>
+    <div class="good-info">
+        <div class="tag-container clearfix">
+        </div>
+        <div class="good-detail-img">
+            <a class="good-thumb" href="#">
+                <img class="lazy" src="<%= list[i].imgsrc%>">
+            </a>
+        </div>
+        <div class="good-detail-text">
+            <a href="#">
+                <%= list[i].cname%>
+            </a>
+            <p class="brand">
+                <a href="#">
+                    <%= list[i].ename%>
+                </a>
+            </p>
+            <p class="price">
+                <span>
+                    <%= list[i].price%> 
+                </span>
+            </p>
+        </div>
+    </div>
+    <% } %>
+</script>

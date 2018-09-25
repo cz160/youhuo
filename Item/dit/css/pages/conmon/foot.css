@@ -1,0 +1,166 @@
+.foot {
+  width: 100%;
+  background: #000;
+}
+
+.foot .foot-container {
+  width: 1150px;
+  height: 350px;
+  overflow: hidden;
+  margin: auto;
+  font-size: 12px;
+}
+
+.foot .foot-container .foot-one {
+  height: 34px;
+  padding: 20px 0 10px;
+}
+
+.foot .foot-container .foot-one .one-content {
+  height: 34px;
+}
+
+.foot .foot-container .foot-one .one-content .left {
+  margin-right: 60px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  float: left;
+}
+
+.foot .foot-container .foot-one .one-content .left .rgb1 {
+  width: 27px;
+  height: 30px;
+  color: white;
+  display: inline-block;
+  font-size: 27px;
+  font-weight: 400;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.foot .foot-container .foot-one .one-content .left .red {
+  color: #e01;
+}
+
+.foot .foot-container .foot-one .one-content .left .rgb2 {
+  color: #fff;
+}
+
+.foot .foot-container .foot-one .one-content .right {
+  width: 240px;
+  border: 1px solid #262626;
+  float: right;
+}
+
+.foot .foot-container .foot-one .one-content .right input {
+  width: 180px;
+  height: 32px;
+  padding: 0 10px;
+  line-height: 32px;
+  border: none;
+  color: #666;
+  outline: none;
+  background: #000;
+}
+
+.foot .foot-container .foot-one .one-content .right .yx {
+  display: block;
+  float: right;
+  margin-right: 20px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.foot .foot-container .foot-two {
+  width: 1150px;
+  height: 151px;
+  padding: 15px 0;
+  overflow: hidden;
+  border-top: 1px solid #262626;
+}
+
+.foot .foot-container .foot-two .two-content {
+  height: 120px;
+}
+
+.foot .foot-container .foot-two .two-content ul {
+  width: 110%;
+}
+
+.foot .foot-container .foot-two .two-content ul li {
+  width: 180px;
+  height: 120px;
+  float: left;
+}
+
+.foot .foot-container .foot-two .two-content ul li p {
+  line-height: 24px;
+}
+
+.foot .foot-container .foot-two .two-content ul li p span {
+  color: #fff;
+}
+
+.foot .foot-container .foot-two .two-content ul li p a {
+  color: #666;
+}
+
+.foot .foot-container .foot-there {
+  width: 1150px;
+  height: 80px;
+  border-bottom: 1px solid #262626;
+  padding: 10px 0 14px;
+}
+
+.foot .foot-container .foot-there .there-content {
+  height: 80px;
+}
+
+.foot .foot-container .foot-there .there-content .top {
+  height: 40px;
+  line-height: 20px;
+  color: #666;
+  overflow: hidden;
+}
+
+.foot .foot-container .foot-there .there-content .top .top-left {
+  width: 218px;
+  height: 40px;
+  margin-top: 3px;
+  float: left;
+}
+
+.foot .foot-container .foot-there .there-content .top .top-left img {
+  margin-right: 4px;
+}
+
+.foot .foot-container .foot-there .there-content .top .top-right {
+  width: 920px;
+  height: 40px;
+  float: right;
+}
+
+.foot .foot-container .foot-there .there-content .top .top-right a {
+  color: #666;
+}
+
+.foot .foot-container .foot-there .there-content .top .top-right span {
+  padding: 0 10px;
+}
+
+.foot .foot-container .foot-there .there-content .top .top-right .police {
+  background: url(http://localhost:9090/images/index-images/f4.png) no-repeat;
+  height: 20px;
+  display: inline-block;
+  padding-left: 25px;
+}
+
+.foot .foot-container .foot-there .there-content .bottom {
+  text-align: center;
+  color: #666;
+  padding-top: 20px;
+  line-height: 20px;
+}

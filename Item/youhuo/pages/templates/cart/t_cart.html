@@ -1,0 +1,36 @@
+<script type="text/html" id="cart_t">
+    <%for(var i=0;i<list.length;i++) {%>
+    <li>
+        <div class="one">
+            <input type="checkbox">
+        </div>
+        <div class="two">
+            <div class="two-img">
+                <img src="//img10.static.yhbimg.com/goodsimg/2018/03/24/14/017fc57dcf1340fc6605d1b3a88e403349.jpg?imageMogr2/thumbnail/64x88/background/d2hpdGU=/position/center/quality/90">    
+            </div>
+            <div class="two-content">
+                <span>
+                    <%= list[i].goods_name%>
+                </span>
+                <br>
+                <span class="cs">颜色：<%= list[i].color%>&nbsp;&nbsp;尺寸：<%= list[i].size%></span>
+            </div>
+        </div>
+        <div class="there">
+            <span>￥<%= list[i].price%></span>
+        </div>
+        <div class="four">
+            <div class="d" style=" border-right:none; ">-</div>
+            <input value="<%= list[i].count%>">
+            <div class="a" style="border-left:none">+</div>
+        </div>
+        <div class="five">
+            <span>￥<%= list[i].sum%></span>
+        </div>
+        <div class="six">
+            <p>删除</p>
+            <p>移入收藏</p>
+        </div>
+    </li>
+    <% } %>
+</script>

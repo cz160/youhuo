@@ -1,0 +1,608 @@
+@charset "UTF-8";
+/*公共部分*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.head {
+  height: 66px;
+  margin: 0 0 20px;
+  border-bottom: 2px solid #222;
+}
+
+.head .head-container {
+  width: 990px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.head .head-container .logo {
+  float: left;
+  line-height: 66px;
+}
+
+.head .head-container .logo img {
+  vertical-align: middle;
+}
+
+.head .head-container ul {
+  float: right;
+  line-height: 66px;
+}
+
+.head .head-container ul li {
+  font-size: 12px;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+}
+
+.head .head-container ul .tool {
+  position: relative;
+}
+
+.head .head-container ul .tool .down {
+  font-size: 12px;
+  height: 28px;
+  line-height: 28px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.head .head-container ul .tool .up {
+  font-size: 12px;
+  height: 28px;
+  line-height: 28px;
+  vertical-align: top;
+  display: none;
+}
+
+.head .head-container ul .tool .tool-select {
+  position: absolute;
+  width: 78px;
+  left: 0;
+  background: #eaeceb;
+  z-index: 9;
+  display: none;
+}
+
+.head .head-container ul .tool .tool-select a {
+  display: block;
+  padding: 0 0 0 10px;
+  border-top: 1px solid #ddd;
+}
+
+.head .head-container ul .tool:hover {
+  background-color: #eaeceb;
+}
+
+.head .head-container ul .tool:hover .tool-select {
+  display: block;
+}
+
+.head .head-container ul .tool:hover .down {
+  display: none;
+}
+
+.head .head-container ul .tool:hover .up {
+  display: inline-block;
+}
+
+.body {
+  width: 990px;
+  margin: 0px auto;
+}
+
+.body .cart-title {
+  padding: 0 30px;
+  background: #444;
+  height: 50px;
+  overflow: hidden;
+}
+
+.body .cart-title p {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  vertical-align: middle;
+  text-align: center;
+  float: left;
+}
+
+.body .cart-title .left {
+  width: 6%;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.body .table li {
+  height: 150px;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+}
+
+.body .table li .one {
+  width: 60px;
+  height: 150px;
+  text-align: right;
+  float: left;
+}
+
+.body .table li .one input {
+  margin-top: 62px;
+}
+
+.body .table li .two {
+  width: 364px;
+  padding: 30px 0px 30px 4px;
+  height: 90px;
+  float: left;
+}
+
+.body .table li .two .two-img {
+  width: 64px;
+  height: 85px;
+  float: left;
+}
+
+.body .table li .two .two-content {
+  color: #444;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+  width: 280px;
+  height: 85px;
+  float: left;
+  padding-left: 20px;
+}
+
+.body .table li .two .two-content .cs {
+  font-size: 13px;
+  font-weight: 300;
+  color: #9a9a9a;
+  display: block;
+  margin-top: 10px;
+}
+
+.body .table li .there {
+  width: 148px;
+  float: left;
+  padding: 30px 0;
+  height: 90px;
+  line-height: 90px;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.body .table li .four {
+  width: 128px;
+  float: left;
+  padding: 58px 0;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.body .table li .four .a, .body .table li .four .d {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 30px;
+  float: left;
+}
+
+.body .table li .four input {
+  width: 38px;
+  text-align: center;
+  height: 30px;
+  color: #444;
+  font-size: 15px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  float: left;
+}
+
+.body .table li .five {
+  width: 160px;
+  float: left;
+  padding: 28px 0;
+  height: 90px;
+  line-height: 90px;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.body .table li .five span {
+  color: red;
+}
+
+.body .table li .six {
+  width: 100px;
+  float: left;
+  text-align: right;
+  padding: 54px 0;
+}
+
+.body .table li .six p {
+  height: 24px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #000;
+  cursor: pointer;
+}
+
+.body .cart-submit {
+  height: 50px;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 20px;
+  width: 100%;
+  line-height: 50px;
+  background-color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.body .cart-submit .all {
+  width: 60px;
+  text-align: right;
+  float: left;
+}
+
+.body .cart-submit .fixed-option {
+  margin-right: 60px;
+  float: left;
+}
+
+.body .cart-submit .fixed-option a {
+  color: #017cf8;
+  margin-left: 20px;
+}
+
+.body .cart-submit .select-num {
+  margin-right: 26px;
+  display: inline-block;
+}
+
+.body .cart-submit .select-num .number {
+  font-size: 14px;
+  color: red;
+}
+
+.body .cart-submit .price-sum {
+  display: inline-block;
+  width: 264px;
+  line-height: 1.3;
+  vertical-align: middle;
+}
+
+.body .cart-submit .price-sum .sum {
+  position: relative;
+}
+
+.body .cart-submit .price-sum .sum strong {
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+  color: #d0021b;
+}
+
+.body .cart-submit .price-sum .offer {
+  color: #afafaf;
+}
+
+.body .cart-submit .go_btn {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  display: block;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #d0021b;
+  cursor: pointer;
+  float: right;
+}
+
+.foot {
+  width: 100%;
+  background: #000;
+}
+
+.foot .foot-container {
+  width: 1150px;
+  height: 350px;
+  overflow: hidden;
+  margin: auto;
+  font-size: 12px;
+}
+
+.foot .foot-container .foot-one {
+  height: 34px;
+  padding: 20px 0 10px;
+}
+
+.foot .foot-container .foot-one .one-content {
+  height: 34px;
+}
+
+.foot .foot-container .foot-one .one-content .left {
+  margin-right: 60px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  float: left;
+}
+
+.foot .foot-container .foot-one .one-content .left .rgb1 {
+  width: 27px;
+  height: 30px;
+  color: white;
+  display: inline-block;
+  font-size: 27px;
+  font-weight: 400;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.foot .foot-container .foot-one .one-content .left .red {
+  color: #e01;
+}
+
+.foot .foot-container .foot-one .one-content .left .rgb2 {
+  color: #fff;
+}
+
+.foot .foot-container .foot-one .one-content .right {
+  width: 240px;
+  border: 1px solid #262626;
+  float: right;
+}
+
+.foot .foot-container .foot-one .one-content .right input {
+  width: 180px;
+  height: 32px;
+  padding: 0 10px;
+  line-height: 32px;
+  border: none;
+  color: #666;
+  outline: none;
+  background: #000;
+}
+
+.foot .foot-container .foot-one .one-content .right .yx {
+  display: block;
+  float: right;
+  margin-right: 20px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.foot .foot-container .foot-two {
+  width: 1150px;
+  height: 151px;
+  padding: 15px 0;
+  overflow: hidden;
+  border-top: 1px solid #262626;
+}
+
+.foot .foot-container .foot-two .two-content {
+  height: 120px;
+}
+
+.foot .foot-container .foot-two .two-content ul {
+  width: 110%;
+}
+
+.foot .foot-container .foot-two .two-content ul li {
+  width: 180px;
+  height: 120px;
+  float: left;
+}
+
+.foot .foot-container .foot-two .two-content ul li p {
+  line-height: 24px;
+}
+
+.foot .foot-container .foot-two .two-content ul li p span {
+  color: #fff;
+}
+
+.foot .foot-container .foot-two .two-content ul li p a {
+  color: #666;
+}
+
+.foot .foot-container .foot-there {
+  width: 1150px;
+  height: 80px;
+  border-bottom: 1px solid #262626;
+  padding: 10px 0 14px;
+}
+
+.foot .foot-container .foot-there .there-content {
+  height: 80px;
+}
+
+.foot .foot-container .foot-there .there-content .top {
+  height: 40px;
+  line-height: 20px;
+  color: #666;
+  overflow: hidden;
+}
+
+.foot .foot-container .foot-there .there-content .top .top-left {
+  width: 218px;
+  height: 40px;
+  margin-top: 3px;
+  float: left;
+}
+
+.foot .foot-container .foot-there .there-content .top .top-left img {
+  margin-right: 4px;
+}
+
+.foot .foot-container .foot-there .there-content .top .top-right {
+  width: 920px;
+  height: 40px;
+  float: right;
+}
+
+.foot .foot-container .foot-there .there-content .top .top-right a {
+  color: #666;
+}
+
+.foot .foot-container .foot-there .there-content .top .top-right span {
+  padding: 0 10px;
+}
+
+.foot .foot-container .foot-there .there-content .top .top-right .police {
+  background: url("../../../images/index-images/f4.png") no-repeat;
+  height: 20px;
+  display: inline-block;
+  padding-left: 25px;
+}
+
+.foot .foot-container .foot-there .there-content .bottom {
+  text-align: center;
+  color: #666;
+  padding-top: 20px;
+  line-height: 20px;
+}
+
+.fix2 {
+  position: fixed;
+  width: 60px;
+  height: 140px;
+  bottom: 20px;
+  right: 138px;
+  z-index: 4;
+  display: none;
+}
+
+.fix2 #box-hide {
+  width: 250px;
+  height: 200px;
+  position: absolute;
+  top: -35px;
+  z-index: 1000;
+  right: 62px;
+  display: none;
+}
+
+.fix2 #box-hide .one {
+  display: none;
+  width: 146px;
+  height: 137px;
+  padding: 20px 0 14px;
+  top: 32px;
+  background-color: #f4f4f4;
+  border: none;
+  z-index: 1000;
+  position: absolute;
+  margin-left: -26px;
+  display: block;
+  top: 0px;
+}
+
+.fix2 #box-hide .one img {
+  margin-left: 25px;
+  width: 96px;
+  height: 96px;
+  display: block;
+}
+
+.fix2 #box-hide .one h5 {
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  text-align: center;
+  color: black;
+  margin-top: 2px;
+}
+
+.fix2 #box-hide .two {
+  display: none;
+  width: 146px;
+  height: 137px;
+  padding: 20px 0 14px;
+  top: 32px;
+  background-color: #f4f4f4;
+  border: none;
+  z-index: 1000;
+  position: absolute;
+  margin-left: -26px;
+  display: block;
+  top: 0px;
+  left: 122px;
+}
+
+.fix2 #box-hide .two img {
+  margin-left: 25px;
+  width: 96px;
+  height: 96px;
+  display: block;
+}
+
+.fix2 #box-hide .two h5 {
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  text-align: center;
+  color: black;
+  margin-top: 2px;
+}
+
+.fix2 .box1-one {
+  width: 60px;
+  height: 60px;
+  background: #000000;
+  opacity: 0.5;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+}
+
+.fix2 .box1-one span {
+  font-size: 40px;
+  display: inline-block;
+}
+
+.fix2 .box2 {
+  width: 60px;
+  height: 60px;
+  background: #000000;
+  opacity: 0.5;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  margin-top: 20px;
+}
+
+.fix2 .box2 span {
+  font-size: 20px;
+  display: inline-block;
+}

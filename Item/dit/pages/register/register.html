@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link type="text/css" rel="stylesheet" href="../../css/pages/register/register.css">
+    <link type="text/css" rel="stylesheet" href="../../css/pages/register/iconfont.css">
+    <link type="text/css" rel="stylesheet" href="../../css/iconfont.css">
+</head>
+
+<body>
+    <!--头部静态-->
+    <div class="head">
+        <div class="head-container">
+            <h2 class="logo">
+                <img src="../../images/index-images/logo.png">
+            </h2>
+            <ul>
+                <li>
+                    <span>Hi~</span>
+                    <a href="../../pages/login/login.html">[请登录]</a>
+                    <a href="#">[免费注册]</a>
+                </li>
+                <li class="tool">
+                    <span>
+                        <a href="#">MY有货</a>
+                    </span>
+                    <!--向下-->
+                    <i class="iconfont icon-triangle-copy down"></i>
+                    <!--向上-->
+                    <i class="iconfont icon-sanjiaoxing up"></i>
+                    <!--隐藏框-->
+                    <div class="tool-select">
+                        <a href="#">我的收藏</a>
+                        <a href="#">优惠券</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">订单中心</a>
+                </li>
+                <li class="tool">
+                    <span>
+                        <a href="#">客户服务</a>
+                    </span>
+                    <!--向下-->
+                    <i class="iconfont icon-triangle-copy down"></i>
+                    <!--向上-->
+                    <i class="iconfont icon-sanjiaoxing up"></i>
+                    <!--隐藏框-->
+                    <div class="tool-select" style="width:84px">
+                        <a href="#">在线客服</a>
+                        <a href="#">帮助中心</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--身体静态-->
+    <div class="body">
+        <div class="body-container">
+            <!--左边-->
+            <div class="left">
+                <div class="left-content">
+                    <a href="#">
+                        <img src="../../images/login-images/login.jpg">
+                    </a>
+                </div>
+            </div>
+            <!--右边-->
+            <form method="POST" onsubmit="return false">
+                <div class="content">
+                    <!--账户登录-->
+                    <ul class="table">
+                        <!--国家选择-->
+                        <li class="clearfix">
+                            <select id="region">
+                                <option value="+61">澳大利亚</option>
+                                <option value="+82">韩国</option>
+                                <option value="+1">加拿大</option>
+                                <option value="+60">马来西亚</option>
+                                <option value="+1">美国</option>
+                                <option value="+81">日本</option>
+                                <option value="+65">新加坡</option>
+                                <option value="+44">英国</option>
+                                <option value="+86" selected="selected">中国</option>
+                                <option value="+853">中国澳门</option>
+                                <option value="+886">中国香港</option>
+                                <option value="+852">中国台湾</option>
+                            </select>
+                        </li>
+                        <!--手机号码输入-->
+                        <li class="clearfix">
+                            <span id="country-code">+86</span>
+                            <input type="text" placeholder="请输入手机号码" id="phone-num" class="phone-num">
+                        </li>
+                        <!--图怕翻转验证-->
+                        <li id="captcha-img clearfix" style="width:330px">
+                            <div id="img-check-header">
+                                <span>请将下列图片点击翻转至正确的方向</span>
+                                <a class="refresh">换一批</a>
+                            </div>
+                            <div class="img-check-main">
+                                <ul class="img-check-pics">
+                                    <li class="img-check-pic">
+                                        <img src="../../images/login-images/fz1.jpg" style="margin-left:-10px;margin-top:-10px">
+                                    </li>
+                                    <li class="img-check-pic">
+                                        <img src="../../images/login-images/fz1.jpg" style="margin-left:-90px;margin-top:-10px">
+                                    </li>
+                                    <li class="img-check-pic">
+                                        <img src="../../images/login-images/fz1.jpg" style="margin-left:-170px;margin-top:-10px">
+                                    </li>
+                                    <li class="img-check-pic" style="margin-right:0">
+                                        <img src="../../images/login-images/fz1.jpg" style="margin-left:-250px;margin-top:-10px">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--验证码-->
+                        <li class="clearfix">
+                            <input class="yzm" placeholder="短信验证码" type="text">
+                            <input class="yzmBtn" type="button" value="获取验证码">
+                        </li>
+                        <!--设置密码-->
+                        <li class="clearfix" class="mima">
+                            <input class="pwd" type="password" placeholder="设置密码">
+                            <div class="pwdQd">
+                                <span class="low">低</span>
+                                <span class="mid">中</span>
+                                <span class="hige">高</span>
+                            </div>
+                            <div class="ts_hide">
+                                <div class="tip1">
+                                    <span>密码只支持6-20位字符</span>
+                                </div>
+                                <div class="tip2">
+                                    <span>由字母、数字组成，不能包含特殊符号</span>
+                                </div>
+                            </div>
+                        </li>
+                        <!--同意条件-->
+                        <li class="clearfix">
+                            <input type="checkbox" checked="checked" class="select">
+                            <div class="font">
+                                <span>我已阅读并同意遵守</span>
+                                <a href="#">YOHO!BUY 有货服务条款</a>
+                            </div>
+                        </li>
+                        <!--注册按钮-->
+                        <li class="clearfix">
+                            <input type="button" id="zcBtn" value="立即注册"">
+                        </li>
+                    </ul>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!--尾部静态-->
+    <div class="foot">
+        <div class="foot-container">
+            <!--尾部第一部分-->
+            <div class="foot-one">
+                <div class="one-content">
+                    <div class="left">
+                        <span class="iconfont icon-zhengpinbaozhang2 rgb1"></span>
+                        <span class="red">100%</span>
+                        <span class="rgb2">品牌正品</span>
+                    </div>
+                    <div class="left">
+                        <span class="iconfont icon-7tianwuliyoutuihuo rgb1"></span>
+                        <span class="red">100%</span>
+                        <span class="rgb2">品牌正品</span>
+                    </div>
+                    <div class="left">
+                        <span class="iconfont icon-zaixiankefu rgb1"></span>
+                        <span class="red">100%</span>
+                        <span class="rgb2">品牌正品</span>
+                    </div>
+                    <div class="right">
+                        <input type="text" value="订阅我们的邮箱">
+                        <span class="iconfont icon-youxiang yx"></span>
+                    </div>
+                </div>
+            </div>
+            <!--尾部第二部分-->
+            <div class="foot-two">
+                <div class="two-content">
+                    <ul>
+                        <li>
+                            <p>
+                                <span>新手专区</span>
+                            </p>
+                            <p>
+                                <a href="#">注册登录</a>
+                            </p>
+                            <p>
+                                <a href="#">购物结算</a>
+                            </p>
+                            <p>
+                                <a href="#">下单支付</a>
+                            </p>
+                            <p>
+                                <a href="#">收货评价</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>会员中心</span>
+                            </p>
+                            <p>
+                                <a href="#">会员制度</a>
+                            </p>
+                            <p>
+                                <a href="#">会员优惠</a>
+                            </p>
+                            <p>
+                                <a href="#">账户管理</a>
+                            </p>
+                            <p>
+                                <a href="#">密码管理</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>发票</span>
+                            </p>
+                            <p>
+                                <a href="#">发票</a>
+                            </p>
+                            <p>
+                                <a href="#">尺码对照</a>
+                            </p>
+                            <p>
+                                <a href="#">尺码解读</a>
+                            </p>
+                            <p>
+                                <a href="#">商品咨询</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>支付方式</span>
+                            </p>
+                            <p>
+                                <a href="#">在线支付</a>
+                            </p>
+                            <p>
+                                <a href="#">货到付款</a>
+                            </p>
+                            <p>
+                                <a href="#">分期付款</a>
+                            </p>
+                            <p>
+                                <a href="#">优惠劵、有货币</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>配送方式</span>
+                            </p>
+                            <p>
+                                <a href="#">配送说明</a>
+                            </p>
+                            <p>
+                                <a href="#">运费说明</a>
+                            </p>
+                            <p>
+                                <a href="#">验货签收</a>
+                            </p>
+                            <p>
+                                <a href="#">收货样本</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>售后服务</span>
+                            </p>
+                            <p>
+                                <a href="#">退换货政策</a>
+                            </p>
+                            <p>
+                                <a href="#">退换货流程</a>
+                            </p>
+                            <p>
+                                <a href="#">投诉与建议</a>
+                            </p>
+                            <p>
+                                <a href="#">在线客服</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>App常见问题</span>
+                            </p>
+                            <p>
+                                <a href="#">iPhone版</a>
+                            </p>
+                            <p>
+                                <a href="#">Android版</a>
+                            </p>
+                            <p>
+                                <a href="#">wap版</a>
+                            </p>
+                            <p>
+                                <a href="#">IPAD版</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--尾部第三部分-->
+            <div class="foot-there">
+                <div class="there-content">
+                    <div class="top">
+                        <div class="top-left">
+                            <img src="../../images/index-images/f1.png">
+                            <img src="../../images/index-images/f2.png">
+                            <img src="../../images/index-images/f3.png">
+                        </div>
+                        <div class="top-right">
+                            <a>返回首页</a>
+                            <span>|</span>
+                            <a>YOHO!BUY 有货</a>
+                            <span>|</span>
+                            <a>新力传媒</a>
+                            <span>|</span>
+                            <a>联系我们</a>
+                            <span>|</span>
+                            <a>商家入驻</a>
+                            <span>|</span>
+                            <a>隐私条款</a>
+                            <span>|</span>
+                            <a>友情链接</a>
+                            <span>|</span>
+                            <a>潮流品牌大全</a>
+                            <span>|</span>
+                            <a>潮流品类大全</a>
+                            <span>|</span>
+                            <a>潮流产品大全</a>
+                            <span>|</span>
+                            <br>
+                            <a>潮流咨询</a>
+                            <span>|</span>
+                            <a>穿衣搭配(男生版)</a>
+                            <span>|</span>
+                            <a>穿衣搭配(女生版)</a>
+                            <span>|</span>
+                            <a>潮流人气</a>
+                            <span>|</span>
+                            <a>潮流潮品</a>
+                            <span>|</span>
+                            <a>潮流视频</a>
+                            <span>|</span>
+                            <a class="police">苏公网安备 32010502010132号</a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>CopyRight © 2007-2018 南京新与力文化传播有限公司 苏ICP备09011225号 NewPower Co. 版权所有
+                            经营许可证编号：苏B2-20120395</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--固定定位-->
+    <div class="fix2">
+        <div class="box1">
+            <div class="box1-one">
+                <span class="iconfont icon-erweima"></span>
+            </div>
+            <div id="box-hide">
+                <div class="one">
+                    <img src="../../images/index-images/ewm.png">
+                    <h5>微信扫一扫</h5>
+                    <h5>关注公众号,送球鞋</h5>
+                </div>
+                <div class="two">
+                    <img src="../../images/index-images/ewm.png">
+                    <h5>下载手机客户端</h5>
+                    <h5 style="color: #d71d32;">更多客户端</h5>
+                </div>
+            </div>
+        </div>
+        <div class="box2" style="cursor:pointer">
+            <span class="iconfont icon-icon-arrow-up"></span>
+        </div>
+    </div>
+</body>
+<script src="../../js/lib/require.js" data-main="../../js/pages/register/register.js"></script>
+
+</html>

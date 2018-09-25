@@ -1,0 +1,571 @@
+@import "../../mixins/login";
+
+/*公共部分*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+//头部
+.head {
+  height: 66px;
+  margin: 0 0 20px;
+  border-bottom: 2px solid #222;
+
+  .head-container {
+    width: 990px;
+    height: 100%;
+    margin: 0 auto;
+
+    .logo {
+      float: left;
+      line-height: 66px;
+
+      img {
+        vertical-align: middle;
+      }
+    }
+
+    ul {
+      float: right;
+      line-height: 66px;
+
+      li {
+        font-size: 12px;
+        vertical-align: middle;
+        display: inline-block;
+        padding: 0 10px;
+        line-height: 28px;
+      }
+
+      .tool {
+        position: relative;
+
+        .down {
+          @include tranle;
+          display: inline-block;
+        }
+
+        .up {
+          @include tranle;
+          display: none;
+        }
+
+        //隐藏框
+        .tool-select {
+          position: absolute;
+          width: 78px;
+          left: 0;
+          background: #eaeceb;
+          z-index: 9;
+          display: none;
+
+          a {
+            display: block;
+            padding: 0 0 0 10px;
+            border-top: 1px solid #ddd;
+          }
+        }
+
+        //鼠标划入显示隐藏框并切换三角形
+        &:hover {
+          background-color: #eaeceb;
+
+          .tool-select {
+            display: block;
+          }
+
+          .down {
+            display: none;
+          }
+
+          .up {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+//身体部分
+.body {
+  width: 100%;
+
+  .body-container {
+    width: 1150px;
+    height: 699px;
+    overflow: hidden;
+    margin: auto;
+
+    //左边部分
+    .left {
+      float: left;
+      margin: 107px 0;
+      width: 575px;
+
+      .left-content {
+        padding: 50px 0;
+        width: 100%;
+        height: 318px;
+        border-right: 1px solid #dfdfdf;
+
+        a {
+          img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 252px;
+            height: 190px;
+          }
+        }
+      }
+    }
+
+    //右边表单部分
+    form {
+      .content {
+        width: 270px;
+        float: left;
+        margin-top: 107px;
+        padding-left: 85px;
+
+        //账号登录
+        .table {
+          width: 340px;
+          //清除浮动
+          .clearfix::after {
+            @include clearfix;
+          }
+          input{
+            outline: none;
+          }
+          li {
+            position: relative;
+            margin-bottom: 25px;
+            width: 270px;
+
+            //国家选择
+            #region {
+              width: 132px;
+              height: 30px;
+              color: rgb(154, 154, 154);
+              font-size: 16px;
+              font-family: 黑体, sans-serif;
+              padding: 4px 0px;
+              border-color: rgb(193, 193, 193);
+              outline: none;
+            }
+
+            //输入手机框
+            #country-code {
+              display: block;
+              float: left;
+              width: 58px;
+              height: 43px;
+              border: 1px solid #dbdbdb;
+              border-right: 0;
+              text-align: center;
+              white-space: nowrap;
+              font-size: 16px;
+              line-height: 43px;
+            }
+
+            .phone-num {
+              padding: 0;
+              width: 209px;
+              height: 43px;
+              border: 1px solid #dbdbdb;
+              color: #9a9a9a;
+              text-indent: 10px;
+              font-size: 16px;
+              line-height: 43px;
+              outline: none;
+            }
+            //图片
+            #img-check-header {
+              width: 270px;
+              font-size: 13px;
+              line-height: 13px;
+              text-align: left;
+              margin-bottom: 10px;
+              color: #b0b0b0;
+            }
+            .refresh{
+              float: right;
+              font-size: 13px;
+              color: #ff1901;
+              cursor: pointer;
+            }
+            .img-check-main{
+              .img-check-pics{
+                display: inline-block;
+                height: 62px;
+                padding: 0;
+                position: relative;
+                .img-check-pic{
+                  float: left;
+                  width: 60px;
+                  height: 60px;
+                  border: 1px solid #e0e0e0;
+                  margin-right: 7px;
+                  cursor: pointer;
+                  overflow: hidden;
+                }
+              }
+            }
+             //验证码
+             .yzm{
+              float: left;
+              width: 160px;
+              height: 43px;
+              padding: 0;
+              color: #9a9a9a;
+              text-indent: 10px;
+              font-size: 16px;
+              line-height: 43px;
+             }
+             .yzmBtn{
+              width: 100px;
+              padding: 0;
+              height: 45px;
+              border: none;
+              color: #fff;
+              text-align: center;
+              font-family: 黑体,sans-serif;
+              line-height: 45px;
+              background: #ff1901;
+              position: absolute;
+              top: 0;
+              right: 0;
+             }
+             //设置密码
+             .pwd{
+              padding: 0;
+              width: 268px;
+              height: 43px;
+              border: 1px solid #dbdbdb;
+              color: #9a9a9a;
+              text-indent: 10px;
+              font-size: 16px;
+              line-height: 43px;
+             }
+             //密码强度
+             .pwdQd{
+              overflow: hidden;
+              margin-top: 5px;
+              width: 270px;
+              height: auto;
+              text-align: right;
+              padding-top: 5px;
+              span{
+                padding: 1px 10px;
+                height: 15px;
+                background-color: #e8e8e8;
+                text-align: center;
+                font-size: 12px;
+                display: inline-block;
+              }
+             }
+             //同意条款
+             .select{
+               display:block;
+               float: left; 
+             }
+             .font{
+               font-size: 12px;
+               width: 252px;
+               float: right;
+               span{
+                color: #666;
+               }
+               a{
+                color: #ff1901;
+                text-decoration: underline;
+               }
+             }
+             //注册按钮
+             #zcBtn{
+              width: 270px;
+              background: #555;
+              font-weight: 700;
+              font-size: 20px;
+              height: 45px;
+              color: #fff;
+              text-align: center;
+              font-family: 黑体,sans-serif;
+              line-height: 45px;
+             }
+          }
+          //设置密码提示框
+          .ts_hide{
+            font-size: 12px;
+            width: 160px;
+            height: 72px;
+            position: absolute;
+            top: -10px;
+            left: 285px;
+            border: 1px solid #dbdbdb;
+            display: none;
+            .tip1{
+              margin-left: 15px;
+              padding-left: 15px;
+              height: 22px;
+              color: #b9b9b9;
+              font-size: 12px;
+              line-height: 22px;
+            }
+            .tip2{
+              margin-left: 15px;
+              padding-left: 15px;
+              height: 22px;
+              color: #b9b9b9;
+              font-size: 12px;
+              line-height: 22px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+//尾部
+.foot {
+  width: 100%;
+  background: #000;
+
+  .foot-container {
+    width: 1150px;
+    height: 350px;
+    overflow: hidden;
+    margin: auto;
+    font-size: 12px;
+
+    //尾部第一部分
+    .foot-one {
+      height: 34px;
+      padding: 20px 0 10px;
+
+      .one-content {
+        height: 34px;
+
+        .left {
+          margin-right: 60px;
+          line-height: 30px;
+          font-size: 12px;
+          font-weight: 700;
+          float: left;
+
+          .rgb1 {
+            width: 27px;
+            height: 30px;
+            color: white;
+            display: inline-block;
+            font-size: 27px;
+            font-weight: 400;
+            vertical-align: middle;
+            margin-right: 5px;
+          }
+
+          .red {
+            color: #e01;
+          }
+
+          .rgb2 {
+            color: #fff;
+          }
+
+        }
+
+        .right {
+          width: 240px;
+          border: 1px solid #262626;
+          float: right;
+
+          input {
+            width: 180px;
+            height: 32px;
+            padding: 0 10px;
+            line-height: 32px;
+            border: none;
+            color: #666;
+            outline: none;
+            background: #000;
+          }
+
+          .yx {
+            display: block;
+            float: right;
+            margin-right: 20px;
+            font-size: 20px;
+            line-height: 28px;
+            color: #fff;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    //尾部第二部分
+    .foot-two {
+      width: 1150px;
+      height: 151px;
+      padding: 15px 0;
+      overflow: hidden;
+      border-top: 1px solid #262626;
+
+      .two-content {
+        height: 120px;
+
+        ul {
+          width: 110%;
+
+          li {
+            width: 180px;
+            height: 120px;
+            float: left;
+
+            p {
+              line-height: 24px;
+
+              span {
+                color: #fff;
+              }
+
+              a {
+                color: #666;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //尾部第三部分
+    .foot-there {
+      width: 1150px;
+      height: 80px;
+      border-bottom: 1px solid #262626;
+      // background: #e01;
+      padding: 10px 0 14px;
+
+      .there-content {
+        height: 80px;
+
+        //上部分
+        .top {
+          height: 40px;
+          line-height: 20px;
+          color: #666;
+          overflow: hidden;
+
+          .top-left {
+            width: 218px;
+            height: 40px;
+            margin-top: 3px;
+            float: left;
+
+            img {
+              margin-right: 4px;
+            }
+          }
+
+          .top-right {
+            width: 920px;
+            height: 40px;
+            float: right;
+
+            a {
+              color: #666;
+            }
+
+            span {
+              padding: 0 10px;
+            }
+
+            .police {
+              background: url("../../../images/index-images/f4.png")no-repeat;
+              height: 20px;
+              display: inline-block;
+              padding-left: 25px;
+            }
+          }
+        }
+
+        //下部分
+        .bottom {
+          text-align: center;
+          color: #666;
+          padding-top: 20px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+//固定定位
+.fix2 {
+  position: fixed;
+  width: 60px;
+  height: 140px;
+  bottom: 20px;
+  right: 138px;
+  z-index: 4;
+  display: none;
+
+  //隐藏框
+  #box-hide {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top: -35px;
+    z-index: 1000;
+    right: 62px;
+    display: none;
+
+    .one {
+      @include hide;
+      display: block;
+      top: 0px;
+    }
+
+    .two {
+      @include hide;
+      display: block;
+      top: 0px;
+      left: 122px;
+    }
+  }
+
+  .box1-one {
+    @include fix;
+
+    span {
+      font-size: 40px;
+      display: inline-block;
+    }
+  }
+
+  .box2 {
+    @include fix;
+    margin-top: 20px;
+
+    span {
+      font-size: 20px;
+      display: inline-block;
+    }
+  }
+}

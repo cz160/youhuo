@@ -1,0 +1,119 @@
+
+//三角形处理
+@mixin tranle {
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: top;
+}
+
+//标题处理
+@mixin title {
+    .one {
+        width: 270px;
+        height: 46px;
+        margin-bottom: 25px;
+        background-color: #fff;
+
+        .bg {
+            width: 40px;
+            height: 40px;
+            float: right;
+            cursor: pointer;
+            text-align: right;
+
+            span {
+                font-size: 38px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+//手机登录和验证码登录
+@mixin sj_yzm {
+    width: 135px;
+    border-radius: 0px;
+    float: left;
+    height: 27px;
+    background: #CCCCCC;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    line-height: 27px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+//输入框处理
+@mixin input {
+    margin-bottom: 25px;
+
+    input {
+        width: 268px;
+        height: 43px;
+        border: 1px solid #dbdbdb;
+        color: rgba(0, 0, 0, .5);
+        text-indent: 10px;
+        font-size: 16px;
+        line-height: 1.2;
+        outline: none;
+    }
+}
+
+//错误提示
+@mixin err-tip {
+    position: absolute;
+    top: 8px;
+    left: 285px;
+    padding: 6px 0;
+    color: red;
+    white-space: nowrap;
+    font-size: 14px;
+    display: none;
+}
+@mixin fix {
+    width: 60px;
+    height: 60px;
+    background: #000000;
+    opacity: 0.5;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+@mixin hide {
+     display: none;
+    width: 146px;
+    height: 137px;
+    padding: 20px 0 14px;
+    top: 32px;
+    background-color: #f4f4f4;
+    border: none;
+    z-index: 1000;
+    position: absolute;
+    margin-left: -26px;
+
+    img {
+        margin-left: 25px;
+        width: 96px;
+        height: 96px;
+        display: block;
+    }
+
+    h5 {
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+        text-align: center;
+        color: black;
+        margin-top: 2px;
+    }
+}
+//清除浮动
+@mixin clearfix {
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    clear: both;
+}

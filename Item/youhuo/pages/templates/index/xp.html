@@ -1,0 +1,23 @@
+<script type="text/html" id="xinping">
+<%for(var i=0;i<list1.length;i++) {%>
+<div class="goodinfo">
+        <div class="tag"></div>
+        <div class="goodimg">
+            <a href="#">
+                <img src="<%= list1[i].goodsImg %>">
+            </a>
+        </div>
+        <div class="goodtext"> 
+            <a href="#">
+                <%= list1[i].goodsName %> 
+            </a>
+            <p class="price">
+                <span>
+                    <%= list1[i].finalPrice %>  
+                </span>
+            </p>
+
+        </div>
+    </div>
+<% } %>
+</script>

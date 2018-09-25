@@ -1,0 +1,1 @@
+require(["http://localhost:9090/js/conf/config.js"],()=>{require(["jquery"],()=>{$("#a").load("http://localhost:9090/pages/common/head.html"),$("#f").load("http://localhost:9090/pages/common/foot.html")})});

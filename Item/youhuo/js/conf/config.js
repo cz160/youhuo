@@ -1,0 +1,17 @@
+require.config({
+    baseUrl:"http://localhost:9090",
+    paths:{
+     //jquery模块
+     "jquery":"./js/lib/jquery-1.9.0",
+     //Swiper模块（使用在index小轮播图制作）
+     "Swiper":"https://cdn.bootcss.com/Swiper/4.3.0/js/swiper.min",
+     //接口魔模块
+     "ajaxUrl":"./js/conf/ajaxMapping",
+     //多个页面公共的js效果
+     "CommntUse":"./js/mylib/CommntUse",
+     //模板字符串
+     "tempstr":"./js/lib/template-web",
+     //设置cookie和获取cookie
+     "cookie":"./js/mylib/cookie"
+    }
+});

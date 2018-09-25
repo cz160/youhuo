@@ -1,0 +1,156 @@
+/*公共部分*/
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+//个人中心部分
+.container{
+    width: 990px;
+    height: 980px;
+    margin: 0px auto;
+    .home-path{
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        a{
+            color: #666;
+        }
+        span{
+            font-weight: 700;
+            color: #666;
+        }
+    }
+    .left{
+        float: left;
+        width: 180px;
+        margin-right: 8px; 
+        border: 1px solid #dedede;
+        .title{
+            font-weight: 700;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 8px;
+            background-color: #e3e3e3;
+            background-position: 10px 12px;
+            background-repeat: no-repeat;
+        }
+        .user-thumb{
+            text-align: center;
+            padding: 20px 0;
+            background: #f8f8f8;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+        
+        .nav-group{
+            .row{
+                height: 38px;
+                line-height: 38px;
+                border-top: 1px solid #e2e2e2;
+                padding-left: 35px;
+                color: #666;
+                background: #f8f8f8;
+                font-size: 12px;
+                &:hover{
+                    background: #fff;  
+                }
+            }
+            .first{
+                border-top: none;
+            }
+            .nav-title{
+                font-size: 14px;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                color: #333;
+                background: #e6e6e6;
+                &:hover{
+                    background: #e6e6e6;
+                }                
+            }
+        }
+    }
+    .right{
+        float: left;
+        width: 800px;
+        box-sizing: border-box;
+        border: 1px solid #dedede;
+        .title{
+            height: 40px;
+            line-height: 40px;
+            padding: 0 8px;
+            background-color: #e3e3e3;
+            span{
+                font-size:16px;
+            }
+            a{
+                display: block;
+                float: right;
+                height: 21px;
+                line-height: 22px;
+                width: 63px;
+                margin-top: 8px;
+                padding-right: 8px;
+                font-size: 12px;
+                color: #fdfdfd;
+                text-align: center;
+                border-radius: 2px;
+                background: black;
+            }
+        }
+        .swindle-info{
+            margin: 10px;
+            padding: 10px;
+            font-size: 12px;
+            background-color: #faf6da;
+            color: #444;
+            span{
+                color: #cd0c25;
+            }
+        }
+        .orders{
+            font-size: 12px;
+            .order-table{
+                height: 30px;
+                line-height: 30px;
+                background: #efefef;
+                border: 1px solid #e6e6e6;
+                padding: 0 10px;
+                span{
+                    display: block;
+                    float: left;
+                    text-align: center;
+                }
+                .info{
+                    width: 330px;
+                    text-align: left;
+                    padding-left: 10px;
+                }
+                .price{
+                    width: 75px;
+                }
+                .count{
+                    width: 60px;
+                }
+                .pay,.order-status,.operation{
+                    width: 100px;
+                }
+            }
+            .empty-tip{
+                padding: 200px 0;
+                text-align: center;
+                overflow: hidden;
+            }
+        }
+    }
+}
